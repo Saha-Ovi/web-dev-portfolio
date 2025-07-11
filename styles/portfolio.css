@@ -175,3 +175,32 @@ main section {
 {
     margin-bottom: 50px;
 }
+
+/* Resume Section */
+
+.resume-container
+{
+    display: flex;
+    gap:24px;
+
+}
+.resume-column-title
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.experience-title
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+/* .experience-sub-title
+{
+    font-size: 40 px;
+    font-weight:600;
+} */
+
+.download-btn
+{
+    margin-top: 50px;
+}
