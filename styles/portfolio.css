@@ -204,3 +204,27 @@ main section {
 {
     margin-top: 50px;
 }
+
+/* footer Section */
+
+footer
+{
+    display: flex;
+    gap: 100px;
+    padding: 130px 230px;
+}
+.footer-column
+{
+    width:50%;
+}
+footer input[type="text"],input[type="email"],footer textarea
+{
+    width: 100%;
+    margin-bottom: 24px;
+    height: 64px;
+    border: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
