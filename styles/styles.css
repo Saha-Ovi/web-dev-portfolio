@@ -1,28 +1,33 @@
 /* Global */
-*
-{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Font */
 
-.open-sans{
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
+
 /* Shared style */
-.color-orange
-{
+.container {
+    max-width: 1140px;
+    width: 102%;
+    margin: 0 auto;
+}
+
+.color-orange {
     color: #FD6E0A;
 }
 
-.btn
-{
-    padding:18px 35px;
+.btn {
+    padding: 18px 35px;
     font-size: 20px;
     background-color: #FD6E0A;
     font-weight: bold;
@@ -31,35 +36,81 @@
     border: none;
 }
 
+/* Header section */
+
 /* Nav bar section */
-header
-{
+header {
     background-color: #FFF8F3;
-    padding-top:50px;
-    max-width: 1140px;
-    width:102%;
-    margin: 0 auto;
+    background: url("../images/developer.png"), url("../images/header_bg.png"),#FFF8F3;
+    background-position: 23px 38px , bottom right;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav h2{
+
+nav h2 {
     font-size: 45px;
     font-weight: 900;
 }
-nav ul
-{
+
+nav ul {
     display: flex;
     align-items: center;
-    list-style-type:none ;
+    list-style-type: none;
     gap: 51px;
 
 }
-nav ul a
-{
-    text-decoration:none ;
+
+nav ul a {
+    text-decoration: none;
     font-size: 20px;
     color: #474747;
+}
+
+/* Banner section */
+
+#banner {
+    /* border: 1px solid rebeccapurple; */
+    margin: 46px 38px 0px 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#banner .banner-content {
+    max-width: 585px;
+}
+
+.banner-content h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+}
+
+.banner-content h1 {
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#banner .banner-image img {
+    max-width: 585px;
+    /* width: 100%; */
+    vertical-align: middle;
 }
